@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Yemek_Tarifi_Vize1.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="kullanici.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
+        <div style="margin-left: 300px; width: 700px; height: auto;">
+
+            <div style="width: 200px; float: left; height: auto; margin-left: 0px; background-color: #eac948">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style2">Okul Bolum</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: double; border-width: medium">Ogrenciler</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: double; border-width: medium">ogretmenler</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: double; border-width: medium"> Idari Kadro</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: double; border-width: medium">Raporlar</td>
+                    </tr>
+                    
+                    </table>
+                <br />
+                <br />
+            </div>
+            <div style="width: 450px; float: left; height: auto; margin-left: 50px; background-color: #eac948">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+
+
+        </div>
+
+    </form>
+</body>
+</html>
+
